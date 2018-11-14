@@ -10,14 +10,20 @@ public class Choice {
 
                 case 1:
                     TacoBellMenu.menuTacoBell();
+                    Price prices = new Price();
+                    Price.prices();
                     num += 4;
                     break;
                 case 2:
                     ChickFilA.menuChickFilA();
+                    prices = new Price();
+                    Price.prices();
                     num += 4;
                     break;
                 case 3:
                     PizzaHutMenu.PizzaHutMenu();
+                    prices = new Price();
+                    Price.prices();
                     num += 4;
                     break;
                 default:
