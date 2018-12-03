@@ -5,14 +5,14 @@ public class PizzaHutMenu {
     public static void PizzaHutMenu() {
 
         Scanner scan = new Scanner(System.in);
-        String[][] menu = {{"Soda", "Water", "Juice"},
-                           {"Cheese Pizza", "Pepperoni Pizza", "Chicken Wings"},
-                           {"Chocolate Brownies", "Chocolate Chip Cookies", "Chocolate Cake"}};
+        String[][] pizzamenu = {{"Soda", "Water", "Juice"},
+                                {"Cheese Pizza", "Pepperoni Pizza", "Chicken Wings"},
+                                {"Chocolate Brownies", "Chocolate Chip Cookies", "Chocolate Cake"}};
         ResChoice.choice();
 
         int choices = scan.nextInt();
 
-        MenuSelect.menu(choices, menu);
+        MenuSelect.menu(choices, pizzamenu);
 
     }
 }
