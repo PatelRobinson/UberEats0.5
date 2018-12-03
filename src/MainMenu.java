@@ -3,7 +3,7 @@ public class MainMenu {
 
     public static void menu (){
 
-        String menu [][] = new String[5][2];
+        String menu [][] = new String[6][2];
 
         menu[0][0] = "Welcome to ";
         menu[0][1] = "UberEats0.5!";
@@ -19,6 +19,9 @@ public class MainMenu {
 
         menu[4][0] = "3: ";
         menu[4][1] = "Pizza Hut";
+
+        menu[5][0] = "4: ";
+        menu[5][1] = "Surprise me!";
 
         for (int row = 0; row < menu.length; row++){
             for(int column = 0; column <menu[row].length; column++ ){
