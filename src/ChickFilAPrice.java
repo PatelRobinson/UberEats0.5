@@ -1,8 +1,10 @@
 import java.util.Scanner;
 public class ChickFilAPrice {
-    public static double prices() {
+    public static double price() {
 
-        String chickMenu[][] = {{"soda", "lemonade", "sweet tea"}, {"Chicken Sandwhich", "Chicken nuggets", "Chicken strips"}, {"ice cream", "fruit bowl", "milkshake"}};
+        String chickMenu[][] = {{"soda", "lemonade", "sweet tea"},
+                                {"Chicken Sandwhich", "Chicken nuggets", "Chicken strips"},
+                                {"ice cream", "fruit bowl", "milkshake"}};
         double menuprices[][] = {{1.29, 0.99, 1.50}, {4.99, 3.99, 4.59}, {2.99, 2.00, 3.99}};
 
         double prices = 0.0;
