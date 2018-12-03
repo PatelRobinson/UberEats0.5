@@ -10,20 +10,17 @@ public class Choice {
 
                 case 1:
                     TacoBellMenu.menuTacoBell();
-                    Price p = new Price();
-                    Price.prices();
+                    TacoBellPrice.price();
                     num += 5;
                     break;
                 case 2:
                     ChickFilA.menuChickFilA();
-                    p = new Price();
-                    Price.prices();
+                    PizzaHutPrice.price();
                     num += 5;
                     break;
                 case 3:
                     PizzaHutMenu.PizzaHutMenu();
-                    p = new Price();
-                    Price.prices();
+                    ChickFilAPrice.price();
                     num += 5;
                     break;
                 case 4:
