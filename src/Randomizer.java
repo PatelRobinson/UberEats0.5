@@ -1,13 +1,10 @@
 import java.util.Random;
-
 class Randomizer {
     public static void Randomizer() {
 
-        String chickMenu[][] = {{"soda", "lemonade", "sweet tea"},{"Chicken Sandwhich", "Chicken nuggets", "Chicken strips"},{"ice cream", "fruit bowl", "milkshake"}};
-        String[][] pizzaHutMenu = {{"Soda", "Water", "Juice"},
-                {"Cheese Pizza", "Pepperoni Pizza", "Chicken Wings"},
-                {"Chocolate Brownies", "Chocolate Chip Cookies", "Chocolate Cake"}};
-        String tacoMenu[][] = {{"soda", "water", "milk"}, {"taco", "burrito", "enchillada"}, {"ice cream", "churro", "something"}};
+        String chickMenu[][] = {{"Soda", "Lemonade", "Sweet Tea"},{"Chicken Sandwich", "Chicken Nuggets", "Chicken Strips"},{"Ice Cream", "Fruit Bowl", "Milkshake"}};
+        String[][] pizzaHutMenu = {{"Soda", "Water", "Juice"}, {"Cheese Pizza", "Pepperoni Pizza", "Chicken Wings"}, {"Chocolate Brownies", "Chocolate Chip Cookies", "Chocolate Cake"}};
+        String tacoMenu[][] = {{"Soda", "Water", "Milk"}, {"Taco", "Burrito", "Nachos"}, {"Ice Cream", "Churros", "Cinnamon Twists"}};
 
         int randRes = (int)(Math.random() * 3 + 1);
         int randDrink = (int)(Math.random() * 3);
