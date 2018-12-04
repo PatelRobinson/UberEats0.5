@@ -1,4 +1,6 @@
 //gives the prices of the items selected
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TacoBellPrice {
@@ -15,24 +17,29 @@ public class TacoBellPrice {
         System.out.println("Please add items to your order, Enter 'F' to finish");
         String myorder = order.nextLine();
         String yourOrder = "";
-
+        boolean isThere = false;
         //Takes in the order from the user, as well as the price
         while (!myorder.equalsIgnoreCase("f")) {
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 3; j++) {
-                    if (menu.Menu(i,j)[i][j].equalsIgnoreCase(myorder)) {
-                        yourOrder = yourOrder + menu.Menu(i,j)[i][j];
-                        prices += menuprices[i][j];
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        if (menu.Menu(i, j)[i][j].equalsIgnoreCase(myorder)) {
+                            yourOrder = yourOrder + menu.Menu(i, j)[i][j];
+                            prices += menuprices[i][j];
 
-                        System.out.print("The price of the item is: $");
-                        System.out.println(menuprices[i][j]);
-                        System.out.println("Please add anything else you would like to order. Enter 'F' to finish");
+                            System.out.print("The price of the item is: $");
+                            System.out.println(menuprices[i][j]);
+                            System.out.println("Please add anything else you would like to order. Enter 'F' to finish");
+                            isThere = true;
 
+                        }
                     }
                 }
+            if(isThere == false){
+                System.out.println("This item is not on the menu. Please choose something else.");
             }
-            myorder = order.nextLine();
-        }
-        return prices;
+            isThere = false;
+                myorder = order.nextLine();
+            }
+            return prices;
     }
 }
