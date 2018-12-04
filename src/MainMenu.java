@@ -15,7 +15,7 @@ public class MainMenu {
         menu[2][1] = "Taco Bell";
 
         menu[3][0] = "2: ";
-        menu[3][1] = "ChichFilA";
+        menu[3][1] = "ChickFilA";
 
         menu[4][0] = "3: ";
         menu[4][1] = "Pizza Hut";
@@ -34,7 +34,6 @@ public class MainMenu {
         Scanner scan = new Scanner(System.in);
         int c = scan.nextInt();
 
-        Choice choice = new Choice();
         Choice.choice(c);
 
 
