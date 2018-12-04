@@ -2,9 +2,9 @@ import java.util.Scanner;
 class ChickFilA {
     public static void menuChickFilA() {
 
-        String chickMenu[][] = {{"soda", "lemonade", "sweet tea"},
-                                {"Chicken Sandwich", "Chicken nuggets", "Chicken strips"},
-                                {"ice cream", "fruit bowl", "milkshake"}};
+        String chickMenu[][] = {{"Soda", "Lemonade", "Sweet Tea"},
+                                {"Chicken Sandwich", "Chicken Nuggets", "Chicken Strips"},
+                                {"Ice Cream", "Fruit Bowl", "Milkshake"}};
 
         System.out.println("Welcome to the ChickFilA menu.");
         ResChoice.choice();
