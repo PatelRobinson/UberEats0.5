@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class ChickFilAPrice {
     public static double price() {
 
-        String chickMenu[][] = {{"soda", "lemonade", "sweet tea"},
-                                {"Chicken Sandwich", "Chicken nuggets", "Chicken strips"},
-                                {"ice cream", "fruit bowl", "milkshake"}};
+        String chickMenu[][] = {{"Soda", "Lemonade", "Sweet Tea"},
+                                {"Chicken Sandwich", "Chicken Nuggets", "Chicken Strips"},
+                                {"Ice Cream", "Fruit Bowl", "Milkshake"}};
         double menuprices[][] = {{1.29, 0.99, 1.50},
                                  {4.99, 3.99, 4.59},
                                  {2.99, 2.00, 3.99}};
