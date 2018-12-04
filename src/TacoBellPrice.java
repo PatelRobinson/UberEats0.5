@@ -4,8 +4,8 @@ public class TacoBellPrice {
 
     public static double price(){
 
-        String tacoMenu[][] = {{"soda", "water", "milk"},
-                               {"taco", "burrito", "nachos"},
+        String tacoMenu[][] = {{"Soda", "Water", "Milk"},
+                               {"Taco", "Burrito", "Nachos"},
                                {"Ice Cream", "Churros", "Cinnamon Twists"}};
 
         double menuprices[][] = {{1.29, 1.29, 1.50}, {1.99, 2.99, 4.59}, {2.99, 1.50, 3.99}};
