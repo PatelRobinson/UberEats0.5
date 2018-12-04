@@ -18,6 +18,7 @@ public class ChickFilAPrice {
         System.out.println("Please add items to your order, Enter 'F' to finish");
         String myorder = order.nextLine();
         String yourOrder = "";
+        boolean isThere = false;
 
         //Takes in the order from the user, as well as the price
         while (!myorder.equalsIgnoreCase("f")) {
@@ -30,10 +31,15 @@ public class ChickFilAPrice {
                         System.out.print("The price of the item is: $");
                         System.out.println(menuprices[i][j]);
                         System.out.println("Please add anything else you would like to order. Enter 'F' to finish");
+                        isThere = true;
 
                     }
                 }
             }
+            if(isThere == false){
+                System.out.println("This item is not on the menu. Please choose something else.");
+            }
+            isThere = false;
             myorder = order.nextLine();
         }
         return prices;
