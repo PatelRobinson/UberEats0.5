@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class TacoBellMenu {
     public static void menuTacoBell() {
 
-        String tacoMenu[][] = {{"soda", "water", "milk"},
-                               {"taco", "burrito", "nachos"},
-                               {"ice cream", "Churros", "Cinnamon Twists"}};
+        String tacoMenu[][] = {{"Soda", "Water", "Milk"},
+                               {"Taco", "Burrito", "Nachos"},
+                               {"Ice Cream", "Churros", "Cinnamon Twists"}};
 
         System.out.println("Welcome to the Taco Bell menu.");
         ResChoice.choice();
