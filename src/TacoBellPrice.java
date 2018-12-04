@@ -6,9 +6,9 @@ public class TacoBellPrice {
 
         String tacoMenu[][] = {{"soda", "water", "milk"},
                                {"taco", "burrito", "nachos"},
-                               {"ice cream", "churro", "something"}};
+                               {"Ice Cream", "Churros", "Cinnamon Twists"}};
 
-        double menuprices[][] = {{1.29, 0.99, 1.50}, {4.99, 3.99, 4.59}, {2.99, 2.00, 3.99}};
+        double menuprices[][] = {{1.29, 1.29, 1.50}, {1.99, 2.99, 4.59}, {2.99, 1.50, 3.99}};
 
         double prices = 0.0;
         Scanner order = new Scanner(System.in);
@@ -30,10 +30,8 @@ public class TacoBellPrice {
                     }
                 }
             }
-            String twoOrder = order.nextLine();
-            myorder = twoOrder;
+            myorder = order.nextLine();
         }
         return prices;
-
     }
 }
